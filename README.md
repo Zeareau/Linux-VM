@@ -10,3 +10,11 @@
 - Practiced core **Linux terminal commands** to build familiarity with bash scripting and system navigation.
 - Installed essential tools like `git`, `curl`, `vim`, and `build-essential` using `apt`.
 - Took screenshots to document progress and system setup.
+
+## Commands I Practiced
+
+```bash
+sudo apt update
+sudo apt install git curl vim build-essential
+neofetch
+curl https://example.com
