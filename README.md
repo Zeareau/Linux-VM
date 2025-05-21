@@ -18,3 +18,23 @@ sudo apt update
 sudo apt install git curl vim build-essential
 neofetch
 curl https://example.com
+```
+
+## Additional Customizations & Installs
+
+- Changed the Ubuntu desktop **background** to personalize the VM.
+- Installed **Google Chrome** by downloading and installing the `.deb` package via terminal.
+- ⛏Installed **Minecraft Java Edition** on Ubuntu using `openjdk` and the official Minecraft launcher.
+
+### Commands Used
+
+```bash
+# Download & install Chrome
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo apt install ./google-chrome-stable_current_amd64.deb
+```
+
+# Install Java and Minecraft launcher
+sudo apt install openjdk-17-jre
+wget https://launcher.mojang.com/download/Minecraft.deb
+sudo apt install ./Minecraft.deb
