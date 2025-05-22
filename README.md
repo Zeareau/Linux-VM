@@ -38,3 +38,23 @@ sudo apt install ./google-chrome-stable_current_amd64.deb
 sudo apt install openjdk-17-jre
 wget https://launcher.mojang.com/download/Minecraft.deb
 sudo apt install ./Minecraft.deb
+
+## Docker & Containerization
+
+To take this project a step further, I installed Docker inside the Linux VM and successfully launched my first containerized web server.
+
+### 🔧 What I Did:
+- Installed Docker using `apt`
+- Ran the official **Nginx** image in a container mapped to `localhost:8080`
+- Verified that the container served a live web page from within the VM
+
+### Commands Used:
+```bash
+sudo apt install docker.io
+sudo systemctl start docker
+sudo systemctl enable docker
+sudo usermod -aG docker $USER
+# (after logout/login or newgrp docker)
+docker run hello-world
+docker run -d -p 8080:80 nginx
+```
